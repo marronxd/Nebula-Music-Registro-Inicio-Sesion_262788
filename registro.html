@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nébula - Regístrate</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+<header class="principal">
+    <img src="./img/cover.jpg" alt="Cover Nébula, a series of albums on outer space">
+    <h1 id="tuMusica">Tu música en la nube y en ti espacio.</h1>
+</header>
+
+<main>
+    <form action="/crear-cuenta" method="post">
+        <fieldset>
+            <legend>Registro</legend>
+
+            <div>
+                <label for="txt-name">Nombre:</label>
+                <input id="txt-name" type="text" name="nombre" minlength="3" required placeholder="Escriba su nombre">
+            </div>
+
+            <div>
+                <label for="txt-email">E-mail:</label>
+                <input id="txt-email" type="email" name="correo" required placeholder="correo@gmail.com">
+            </div>
+
+            <div>
+                <label for="txt-dob">Fecha de nacimiento:</label>
+                <input id="txt-dob" type="date" name="fechaNacimiento" required>
+            </div>
+
+            <div>
+                <label for="txt-pass">Contraseña:</label>
+                <input id="txt-pass" type="password" name="contrasenia" required placeholder="Escriba su contraseña">
+            </div>
+
+            <div>
+                <label for="txt-username">Pseudónimo:</label>
+                <input id="txt-username" type="text" name="txt_pseudonimo" pattern="[a-zA-Z]{3,10}-[0-9]{2,10}" required placeholder="Ejem: pan10">
+            </div>
+
+            <div>
+                <p>Género:</p>
+                <input type="radio" id="gen-m" name="rad_genero" value="masculino">
+                <label for="gen-m">Masculino</label>
+
+                <input type="radio" id="gen-f" name="rad_genero" value="femenino">
+                <label for="gen-f">Femenino</label>
+
+                <input type="radio" id="gen-o" name="rad_genero" value="otro">
+                <label for="gen-o">Otro</label>
+            </div>
+
+            <div>
+                <label for="sel-suscripcion">Suscripción:</label>
+                <select id="sel-suscripcion" name="sel_suscripcion">
+                    <option value="gratis">Gratis</option>
+                    <option value="mensual">Mensual</option>
+                    <option value="anual">Anual</option>
+                </select>
+            </div>
+
+            <div class="terms">
+                <input id="chk_terms" type="checkbox" name="chk_terminos">
+                <label for="chk_terms">Acepto términos y condiciones</label>
+            </div>
+
+            <div>
+                <label for="txt-comentarios">Comentarios:</label>
+                <textarea id="txt-comentarios" name="comentarios" rows="4" placeholder="Escriba sus comentarios..."></textarea>
+            </div>
+
+            <div class="options">
+                <button type="submit">Registrar</button>
+                <button type="reset">Restablecer</button>
+            </div>
+        </fieldset>
+    </form>
+</main>
+</body>
+</html>

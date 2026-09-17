@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nébula - Iniciar sesión</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+    <body>
+        <main>
+
+            <form action="/autenticacion" method="post" >
+
+                <fieldset>
+
+                    <legend>Inicio de sesión</legend>
+                <div>
+                    <label for="txt-email">Email</label>
+                    <input type="email" name="correo" id="txt-email" required placeholder="Introduzca su correo">
+                </div>
+
+                <div>
+                    <label for="txt-password">Contraseña</label>
+                    <input name="contrasenia" required type="password" id="txt-password" placeholder="Introduzca su contraseña">
+                </div>
+
+                <div class="options">
+                    <button type="submit">Iniciar</button>
+                    <button type="reset">Cancelar</button>
+                </div>
+
+                </fieldset>
+
+            </form>
+
+        </main>
+    </body>
+</html>

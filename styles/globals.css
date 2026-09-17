@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Angkor&family=Idiqlat:wght@200;300;400&family=Libre+Barcode+39+Extended&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --bg-color-black: #131300;
+    --text-color-dark: #EDF2F4;
+    --links-color-dark: #EFBDEB;
+    --link-color-hover: #8D91C7;
+    --nav-links: #8D3FB1;
+    --highlight: #EDF67D
+}
+a{
+    color: var(--text-color-dark);
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 40ms;
+}
+a:hover{
+    color: var(--link-color-hover);
+    transition: all 40ms;
+}
