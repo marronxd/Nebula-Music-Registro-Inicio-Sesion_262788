@@ -1,19 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Angkor&family=Idiqlat:wght@200;300;400&family=Libre+Barcode+39+Extended&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Angkor&family=Idiqlat:wght@200;300;400&family=Libre+Barcode+39+Extended&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');/*Paleta de colores del proyecto*/
 :root{
-    --bg-color-black: #131300;
+    --bg-color-black: #131200;
+    --bg-color-form: #13130f;
+    --card-bg-dark:#1c1a05;
     --text-color-dark: #EDF2F4;
     --links-color-dark: #EFBDEB;
-    --link-color-hover: #8D91C7;
+    --link-color-hover-dark: #8D91C7;
     --nav-links: #8D3FB1;
-    --highlight: #EDF67D
+    --highlight: #EDF67D;
+    --radius: 0.5rem;
+    --animacion-hover: all 0.3s ease-in-out;
+    --animacion-base: transform 0.3s ease, box-shadow 0.3s ease;
+}
+*{
+    /*  Basicamente esto da ordenes de que las medidas proporcionadas sea el resultado final
+        o sea, ya todo el conjunto (paddings, border, content, etc)
+    */
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
 }
 a{
     color: var(--text-color-dark);
     text-decoration: none;
     cursor: pointer;
-    transition: all 40ms;
+}
+button{
+    transition: var(--animacion-base);
+}
+
+button:hover{
+    transform: translateY(-2px);
+    transition: var(--animacion-hover);
 }
 a:hover{
-    color: var(--link-color-hover);
-    transition: all 40ms;
+    color: var(--link-color-hover-dark);
 }

@@ -2,30 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nébula - Iniciar sesión</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
     <body>
-        <main>
+        <main class="main-form">
 
             <form action="/autenticacion" method="post" >
-
+                <img src="./img/nebula-03.png" alt="logo nebula">
                 <fieldset>
-
                     <legend>Inicio de sesión</legend>
+                    <p>Ingresa tus credenciales de acceso</p>
                 <div>
-                    <label for="txt-email">Email</label>
-                    <input type="email" name="correo" id="txt-email" required placeholder="Introduzca su correo">
+                    <label for="txt-email">Correo Electrónico</label>
+                    <input type="email" name="correo" id="txt-email" required placeholder="correo@gmail.com">
                 </div>
 
                 <div>
                     <label for="txt-password">Contraseña</label>
-                    <input name="contrasenia" required type="password" id="txt-password" placeholder="Introduzca su contraseña">
+                    <input name="contrasenia" required type="password" id="txt-password" placeholder="************">
                 </div>
 
                 <div class="options">
-                    <button type="submit">Iniciar</button>
+                    <button type="submit"><span>Iniciar Sesión</span></button>
                     <button type="reset">Cancelar</button>
+                    <span>¿Aún no tiene cuenta? <a href="registro.html">Regístrate</a></span>
                 </div>
 
                 </fieldset>

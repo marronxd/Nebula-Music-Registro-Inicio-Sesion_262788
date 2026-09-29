@@ -2,15 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nébula Music - Inicio</title>
-    <link rel ="stylesheet" href="./styles/styles.css/">
+    <link rel ="stylesheet" href="./styles/styles.css">
 </head>
+
 <body>
 
     <nav>
         <a class="logo">
             <img src="./img/nebula-03.png" alt="nebula music logo">
         </a>
+            <input type="checkbox" id="menu-toggle" hidden>
+            <label for="menu-toggle" class="menu-icon">
+                <img src ="./img/menu.png" alt="menu icon" class="menu-icon">
+            </label>
         <ul>
             <li>
                 <a href="index.html">Inicio</a>
@@ -28,31 +34,56 @@
     </nav>
 <header class="principal">
     <img src="./img/cover.jpg" alt="Cover Nébula, a series of albums on outer space">
-    <h1 id="tuMusica">Tu música en la nube y en ti espacio.</h1>
+    <h1 id="tu-musica">Tu música en la <span>nube</span> y en tu <span>espacio</span>.</h1>
 </header>
 <main>
-    <h2>¡Enterate de todo!</h2>
-    <section class="news">
-        <h2>Novedades de la semana</h2>
-        <article>
-            <h3>Taylor lanza cancion para Toy Story</h3>
-            <p>El primero</p>
+
+    <section id="news">
+
+        <article class="auth-card">
+            <img src="img/odoriko.jpg" alt="imagen album de vaundy">
+            <div class ="content">
+                <h3>Vaundy lanza exitaso</h3>
+                <p>Con su canción "odoroki" su popularidad en redes sociales se dispara.</p>
+            </div>
         </article>
 
-        <article>
-            <h3>Shakira manda a una imitadora al mundial</h3>
-            <p>el segundo</p>
+        <article class="auth-card">
+            <img src="img/taylor-album.jpg" alt="imagen album de taylor">
+            <div class ="content">
+                <h3>Taylor Swift en su nueva era</h3>
+                <p>El nuevo disco de Taylor "The life of showgirl" saldra a la venta el 67 de octubre.</p>
+            </div>
         </article>
 
-        <article>
-            <h3>Harry Styles se rebela en su segundo concierto</h3>
-            <p> el tercero </p>
+        <article class="auth-card">
+            <img src="img/oasis.jpg" alt="imagen banda oasis">
+            <div class ="content">
+                <h3>Oasis: El Reencuentro</h3>
+                <p>Los hermanos Liam y Noel anuncias su regreso con un setlist histórico para su gira mundial.</p>
+            </div>
         </article>
+
     </section>
 
     <footer>
-        <p>Copyright Nébula 2026.</p>
+        <p>Copyright Nébula 2026. Todos los derechos serán reservados</p>
+        <a href="https://www.bing.com/ck/a?!&&p=ef5f41a11bf8632c0e3a70277dd03f4f34ce11b5858ffa517971becb16210f5cJmltdHM9MTc5MDQ2NzIwMA&ptn=3&ver=2&hsh=4&fclid=2444f9d8-1d76-617f-2373-ef4c1c9860fb&u=a1L3ZpZGVvcy9yaXZlcnZpZXcvcmVsYXRlZHZpZGVvP3E9YnVubnkrZ2lybCsmJm1pZD1CQjkzNEQ4RUI0QUZCREUzMzk0Q0JCOTM0RDhFQjRBRkJERTMzOTRDJmNodXJsPWh0dHBzJTNhJTJmJTJmd3d3LnlvdXR1YmUuY29tJTJmY2hhbm5lbCUyZlVDM1BadnFFRS16cHJteDcwaDNRLXpvZyZGT1JNPVZBTUdaQw">Términos y Condiciones</a>
     </footer>
 </main>
 </body>
+
+<script>
+    const dialog =document.getElementById("modals");
+    const abrir = document.getElementById("abrir");
+    const cerrar = document.getElementById("cerrar");
+
+    abrir.addEventListener("click", (e) => {
+        dialog.showModal();
+    })
+
+    cerrar.addEventListener("click", (e) => {
+        dialog.close();
+    })
+</script>
 </html>
